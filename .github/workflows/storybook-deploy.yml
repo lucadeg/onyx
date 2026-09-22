@@ -1,3 +1,4 @@
+
 name: Storybook Deploy
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
@@ -11,15 +12,7 @@ concurrency:
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - "web/lib/opal/**"
-      - "web/src/refresh-components/**"
-      - "web/.storybook/**"
-      - "web/package.json"
-      - "web/package-lock.json"
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: read
 jobs:

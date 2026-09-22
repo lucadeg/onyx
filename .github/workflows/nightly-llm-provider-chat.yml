@@ -1,14 +1,13 @@
+
 name: Nightly LLM Provider Chat Tests
 concurrency:
   group: Nightly-LLM-Provider-Chat-${{ github.workflow }}-${{ github.ref_name }}
   cancel-in-progress: true
 
 on:
-  schedule:
-    # Runs daily at 10:30 UTC (2:30 AM PST / 3:30 AM PDT)
-    - cron: "30 10 * * *"
   workflow_dispatch:
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: read
 

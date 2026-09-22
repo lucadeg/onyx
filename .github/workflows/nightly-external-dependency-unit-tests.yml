@@ -1,15 +1,13 @@
+
 name: Nightly External Dependency Unit Tests
 concurrency:
   group: Nightly-External-Dependency-Unit-Tests-${{ github.workflow }}-${{ github.ref_name }}
   cancel-in-progress: true
 
 on:
-  schedule:
-    # Runs daily at 10:30 UTC (2:30 AM PST / 3:30 AM PDT) — same slot as
-    # nightly-llm-provider-chat.yml.
-    - cron: "30 10 * * *"
   workflow_dispatch:
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   nightly-external-dependency-unit-tests:
     # Runs every test under backend/tests/external_dependency_unit marked

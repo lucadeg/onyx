@@ -1,13 +1,12 @@
+
 name: Build and Push Docker Images on Tag
 
 on:
-  push:
-    tags:
-      - "*"
   workflow_dispatch:
 
 # Set restrictive default permissions for all jobs. Jobs that need more permissions
 # should explicitly declare them.
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   # Required for OIDC authentication with AWS
   id-token: write # zizmor: ignore[excessive-permissions]

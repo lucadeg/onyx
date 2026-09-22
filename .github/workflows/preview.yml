@@ -1,14 +1,12 @@
+
 name: Preview Deployment
 env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
   VERCEL_CLI: vercel@50.14.1
 on:
-  push:
-    branches-ignore:
-      - main
-    paths:
-      - "web/**"
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: read
   pull-requests: write

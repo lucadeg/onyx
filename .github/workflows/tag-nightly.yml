@@ -1,10 +1,10 @@
+
 name: Nightly Tag Push
 
 on:
-  schedule:
-    - cron: "0 10 * * *" # Runs every day at 2 AM PST / 3 AM PDT / 10 AM UTC
   workflow_dispatch:
 
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions:
   contents: write # Allows pushing tags to the repository
 

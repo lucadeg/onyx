@@ -1,11 +1,9 @@
+
 name: Build and Push Sandbox Image on Tag
 
 on:
-  push:
-    tags:
-      - "experimental-cc4a.*"
-
-# Restrictive defaults; jobs declare what they need.
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions: {}
 
 jobs:

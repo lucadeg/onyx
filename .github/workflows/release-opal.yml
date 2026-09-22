@@ -1,10 +1,9 @@
+
 name: Release Opal
 
 on:
-  push:
-    tags:
-      - "opal/v*.*.*"
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 jobs:
   npm:
     runs-on: ubuntu-latest

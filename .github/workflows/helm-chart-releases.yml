@@ -1,10 +1,9 @@
+
 name: Release Onyx Helm Charts
 
 on:
-  push:
-    branches:
-      - main
-
+  workflow_dispatch:
+  # Automatic triggers removed; invoke through FounderOS/Admin Gate.
 permissions: write-all
 
 jobs:
